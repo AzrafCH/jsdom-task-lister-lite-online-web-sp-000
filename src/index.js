@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
-  const tasklist = new Tasklist();
+  const taskList = new Tasklist();
 });
+
+const taskForm = document.getElementById('create-task-form')
