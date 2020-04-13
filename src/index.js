@@ -7,22 +7,11 @@ const taskForm = document.getElementById('create-task-form')
 const taskList = document.getElementById('list')
 const tasks = document.getElementById('tasks')
 
-taskForm.addEventListener("submit", (e) {
-  e.preventDefault()
-  const taskInput = taskForm["new-task-description"].value
-
-  tasks.innerHTML += `<li id = "${taskInput}"> ${taskInput} </li>`
-
-  taskForm["new-task-description"].value = ""
-});
-
-tasks.addEventListener("click", (e) {
-  clickMe(e);
-});
-
-  function clickMe(e) {
-    if (e.target.tagName === "BUTTON") {
-      e.target.previousElementSibling.remove();
-      e.target.remove();
-    }
-  }
+const submissionForm = document.getElementById("create-task-form")
+submissionForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  var newField = document.createElement("li")
+  var content = document.createTextNode(e.target.children[1].value)
+  newField.appendChild(content);
+  list.appendChild(newField)
+})
