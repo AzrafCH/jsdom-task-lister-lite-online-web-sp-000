@@ -5,6 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const taskForm = document.getElementById("create-task-form")
 
+function removeBtn () {
+
+}
+
 taskForm.addEventListener("submit", (e) => {
   e.preventDefault();
   let newField = document.createElement("li")
