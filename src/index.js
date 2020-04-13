@@ -3,11 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const taskList = new taskList();
 });
 
-const taskForm = document.getElementById('create-task-form')
-const taskList = document.getElementById('list')
-const tasks = document.getElementById('tasks')
-
+const field = document.getElementById("new-task-description")
+const list = document.getElementById("tasks")
 const submissionForm = document.getElementById("create-task-form")
+
 submissionForm.addEventListener("submit", (e) => {
   e.preventDefault();
   var newField = document.createElement("li")
