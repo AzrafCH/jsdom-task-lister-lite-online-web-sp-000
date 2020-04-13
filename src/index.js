@@ -12,6 +12,6 @@ taskForm.addEventListener("submit", (e) => {
   let removeBtn = document.createElement("BUTTON")
   removeBtn.innerHTML = "Remove";
 
-  newField.appendChild(content, removeBtn);
-  list.appendChild(newField)
+  newField.appendChild(content);
+  list.appendChild(newField, removeBtn)
 })
