@@ -20,8 +20,8 @@ tasks.addEventListener("click", (e) {
   clickMe(e);
 });
 
-function clickMe(e) {
-  if (e.target.tagName === "BUTTON") {
+  function clickMe(e) {
+    if (e.target.tagName === "BUTTON") {
       e.target.previousElementSibling.remove();
       e.target.remove();
     }
