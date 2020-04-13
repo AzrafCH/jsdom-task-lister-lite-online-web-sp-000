@@ -7,8 +7,8 @@ const submissionForm = document.getElementById("create-task-form")
 
 submissionForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  var newField = document.createElement("li")
-  var content = document.createTextNode(e.target.children[1].value)
+  let newField = document.createElement("li")
+  let content = document.createTextNode(e.target.children[1].value)
   newField.appendChild(content);
   list.appendChild(newField)
 })
