@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const taskList = new taskList();
 });
 
-const submissionForm = document.getElementById("create-task-form")
+const taskForm = document.getElementById("create-task-form")
 
 submissionForm.addEventListener("submit", (e) => {
   e.preventDefault();
