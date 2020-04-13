@@ -15,3 +15,7 @@ taskForm.addEventListener("submit", (e) {
 
   taskForm["new-task-description"].value = ""
 });
+
+tasks.addEventListener("click", (e) {
+  clickMe(e);
+});
